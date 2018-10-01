@@ -5,7 +5,7 @@
 
   <project path="art" name="android_art" remote="havoc" />
 
-  <project path="build/make" name="android_build" remote="havoc" >
+  <!--<project path="build/make" name="android_build" remote="havoc" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -13,7 +13,7 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>
+  </project>-->
 
   <project path="build/soong" name="android_build_soong" remote="havoc" >
     <linkfile src="root.bp" dest="Android.bp" />
@@ -36,8 +36,6 @@
   <project path="external/sqlite" name="android_external_sqlite" remote="havoc" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="havoc" />
 
-  <project path="frameworks/av" name="android_frameworks_av" remote="havoc" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="havoc" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="havoc" />
   <project path="frameworks/native" name="android_frameworks_native" remote="havoc" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="havoc" />
@@ -54,20 +52,16 @@
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="havoc" />
   <project path="hardware/ril" name="android_hardware_ril" remote="havoc" />
 
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="havoc" />
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="havoc" />
-  <project path="packages/apps/HavocSettings" name="android_packages_apps_HavocSettings" remote="havoc" />
   <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="havoc" />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="havoc" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="havoc" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="havoc" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="havoc" />
   <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="havoc" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="havoc" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="havoc" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="havoc" />
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="havoc" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="havoc" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="havoc" />
 
   <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="havoc" />
